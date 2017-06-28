@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--      <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" content="#2196f3">
+
+        <link rel="stylesheet" href="css/framework7/framework7.material.css">
+        <link rel="stylesheet" href="css/framework7/framework7.material.colors.css">
+        <link rel="stylesheet" href="css/framework7/framework7.keypad.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>ELTEK ENERGY</title>
+    </head>
+    <body>
+      <div class="views">
+          <div class="view view-main">
+              <div class="pages navbar-fixed ">
+
+              </div>
+          </div>
+      </div>
+
+        <!-- Elementi dinamici (popup, popover ecc) -->
+        <div id="dynamic_elements">
+        </div>
+
+        <!-- Template7 -->
+        <div id="dynamic_f7templates">
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <!-- Libs -->
+        <script type="text/javascript" src="js/libs/framework7/framework7.js"></script>
+        <script type="text/javascript" src="js/libs/framework7/framework7.keypad.js"></script>
+        <script type="text/javascript" src="js/libs/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/backbone/underscore-min.js"></script>
+        <script type="text/javascript" src="js/libs/backbone/backbone-min.js"></script>
+        <script type="text/javascript" src="js/libs/backbone/deep-model.js"></script>
+        <script type="text/javascript" src="js/libs/backbone/backbone.epoxy.min.js"></script>
+        <script type="text/javascript" src="js/libs/class.min.js"></script>
+        <script type="text/javascript" src="js/libs/mqttws31.js" ></script>
+	      <script type="text/javascript" src="js/libs/class.mqttHandler.js" ></script>
+        <script type="text/javascript" src="js/libs/myUtils.js" ></script>
+
+        <script type="text/javascript" src="js/libs/class.factoryviews.js"></script>
+        <script type="text/javascript" src="js/libs/class.factorymodels.js"></script>
+
+        <script type="text/javascript" src="js/models/EnergyCounterModel.js"></script>
+        <script type="text/javascript" src="js/collections/EnergyCounterCollection.js"></script>
+
+        <script type="text/javascript" src="js/views/HomeView.js"></script>
+        <script type="text/javascript" src="js/views/EnergyListView.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!-- Template7 for Application -->
+// ----------------------------------------------------------------------------------------- //
+<script id="energycountersTemplate" type="text/template7">
+    <ul>
+        {{#each list}}
+        <li class="transitioning"  >
+
+            <a href="#" class="item-link item-content" data-name="{{name}}">
+                <div class="item-inner">
+                    <div class="item-title">
+                      {{name}}  {{#js_compare "this.count != 0"}}&nbsp;&nbsp;<span class="numberCircle"> {{count}} </span>{{/js_compare}}
+                    </div>
+                    <div class="item-after">{{totenergy}} {{unit}}</div>
+                </div>
+            </a>
+
+        </li>
+        {{/each}}
+    </ul>
+</script>
+// ----------------------------------------------------------------------------------------- //
